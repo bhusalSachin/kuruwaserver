@@ -9,6 +9,16 @@ const {
 const clientrouter = express.Router();
 
 //handling signup endpoint
-router.post("/clientsignup", validateUserSignUp, userValidation, createClient);
-router.post("/clientlogin", validateUserSignIn, userValidation, clientSignIn);
+clientrouter.post(
+  "/clientsignup",
+  validateUserSignUp,
+  userValidation,
+  createClient
+);
+clientrouter.post(
+  "/clientlogin",
+  validateUserSignIn,
+  userValidation,
+  clientSignIn
+);
 module.exports = clientrouter;
