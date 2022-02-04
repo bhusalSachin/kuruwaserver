@@ -38,8 +38,6 @@ exports.createClient = async (req, res) => {
     username: req.body.username,
     email,
     phonenumber,
-    location,
-    expoPushToken,
     password,
   });
   await client.save();
