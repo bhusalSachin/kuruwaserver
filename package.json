@@ -1,0 +1,22 @@
+{
+  "name": "appserver",
+  "version": "1.0.0",
+  "description": "Server for priceTag app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "Sachin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.4",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "socket.io": "^4.4.1"
+  }
+}
