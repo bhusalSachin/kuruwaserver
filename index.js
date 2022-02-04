@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const User = require("./models/user");
 const userRouter = require("./routes/user");
+const clientRouter = require("./routes/client");
 const passport = require("passport");
 
 //connecting to mongodb using mongoose
@@ -23,6 +24,7 @@ app.use(express.json());
 app.use(passport.initialize());
 require("./middleware/passport")(passport);
 app.use(userRouter);
+app.use(clientRouter);
 
 //default route
 app.get("/", (req, res) => {
