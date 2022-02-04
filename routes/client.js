@@ -6,9 +6,9 @@ const {
   validateUserSignIn,
 } = require("../middleware/validators/user");
 
-const router = express.Router();
+const clientrouter = express.Router();
 
 //handling signup endpoint
 router.post("/clientsignup", validateUserSignUp, userValidation, createClient);
 router.post("/clientlogin", validateUserSignIn, userValidation, clientSignIn);
-module.exports = router;
+module.exports = clientrouter;
